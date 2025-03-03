@@ -1,0 +1,96 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about{
+    padding-top:350px ;
+}
+
+.yassin-matchs{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 400px;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 2s;
+}
+.yassin-matchs img{
+    width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 5px;
+}
+.matchs-dis{
+    width: 720px;
+    font-size: 30px;
+    line-height: 50px;
+    color: rgb(172, 170, 170);
+}
+.about-yassin{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 200px;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 2s;
+}
+.about-yassin img{
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 5px;
+}
+.about-dis{
+    width: 720px;
+    font-size: 30px;
+    line-height: 50px;
+    color: rgb(172, 170, 170);
+}
+.social{
+display: flex;  
+      flex-direction: column;
+      align-items:center ;
+      color: white;
+      margin: 300px 0;
+    & ul{
+        border: 3px solid white;
+        box-shadow: 0 0 10px 1px ;
+        padding: 0;
+        display: flex;
+        padding: 10px;
+        border-radius: 20px;
+        & li a{
+            margin: 0 50px;
+            font-size: 40px;
+        transition: 0.3s;
+        cursor: pointer;
+        color: white;
+
+
+        }
+        & li:nth-child(1){
+            transition: 0.3s;
+        }
+        & li:nth-child(2){
+            transition: 0.3s;
+        }
+        & li:nth-child(3){
+            transition: 0.3s;
+        }
+        & li:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+.about-img-phone{
+    display: none;
+}
+.sidebar{
+    display: none;
+}
+.sider-social{
+    display: none;
+}
+.show{
+    opacity: 1;
+    transform: translateX(0);
+}
