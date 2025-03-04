@@ -25,6 +25,9 @@ body{
 .vis{
     opacity: 30%;
 }
+.computer{
+    display: none;
+}
 .overlay{
     position: fixed;
     height: 100vh;

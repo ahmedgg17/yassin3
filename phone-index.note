@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style/footer.css" media="(min-width:769px)">
     <meta charset="UTF-8">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"
     <meta name="viewport" content="weight=device-width,initial-scale=0.75">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style/style-header.css" media="(min-width:769px)">
-    <link rel="stylesheet" href="style/style-about.css" media="(min-width:769px)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/phone-style/phone-style.css" media="(max-width:768px)">
+    <link rel="stylesheet" href="phone-style/phone-style.css">
     <link rel="icon" type="image/png" href="">
     <title>Yasin Nabil-MMA</title>
 </head>
 <body>
-    <div class="overlay display computer"></div>
+    <div class="overlay display"></div>
     <header>
         <div class="top">
             <div class="open unvis">
@@ -22,9 +19,9 @@
                     <img src="data/067.-Letter-G-Gaming-Concept-Logo.png.jpg" alt="">
                 </div>
                 <p class="phone">personal definition</p>
-                <span id="openSider phone" ><i class="fa-solid fa-bars phone"></i></span>
+                <span id="openSider" ><i class="fa-solid fa-bars phone"></i></span>
             </div>
-            <ul id="sider" class="sider-close sidebar phone">
+            <ul id="sider" class="sider-close sidebar">
                 <span class="close phone"><i id="close" class="fa-solid fa-xmark"> sider</i></span>
                 <li class="li-main">
                     <a href="#main" class="main1 cansel">main</a>
@@ -61,14 +58,9 @@
             <div class="dis-fot-yassin">
                 <h2 class="theWelcome"></h2>
                 <h3 class="under-dis">MMA Fighter Amateur</h3>
-                <a href="#about"><img src="data/OIP.jpg" alt="">about</a>
-                <div class="record computer">
-                    <h2>record:</h2>
-                    <h2 class="wins"></h2><span></span><h2 class="loss"></h2><h2 class="draw"></h2>
-                </div>
-                
+                <a href="#about"><img src="data/OIP.jpg" alt="">about</a>   
             </div>
-            <div class="yassin-img computer">
+            <div class="yassin-img">
                 <img class="img-1" src="data/WhatsApp Image 2025-03-01 at 01.31.50_1584b47f.jpg" alt="">
                 <img class="img-2" src="data/WhatsApp Image 2025-02-28 at 03.55.34_fc360537.jpg" alt="">
                 <img class="img-3" src="data/WhatsApp Image 2025-03-01 at 01.37.58_142df9c3.jpg" alt="">
@@ -77,7 +69,6 @@
         <div class="next-match unvis">
             <h3>next match <span class="time"></span></h3>
         </div>
-    </div>
     </div>
     </header>
     <div class="about unvis" id="about">
@@ -105,43 +96,26 @@
         <!-- <h1>yassin social media</h1> -->
         <ul>
             <li class="instagram unshow in-unshow" >
-               <a  href="https://www.instagram.com/xyassinnabilx?igsh=MzFmM2ttOHRpN3Yy">
-                <img class="computer" src="/data/WhatsApp Image 2025-03-04 at 02.32.49_1f88c919.jpg" alt="">
-                <i class="fa-brands fa-instagram"></i>
-            </a> 
-            </li>
-            <li class="unshow facebook">
-              <a href="https://www.facebook.com/share/1PzkmA9aS4/?mibextid=qi2Omg">
-                <img class="computer" src="/data/WhatsApp Image 2025-03-04 at 02.32.48_5fb3c9a1.jpg" alt="">
-                <i class="fa-brands fa-facebook"></i>
-            </a>  
-            </li>
-            <li class="unshow tiktok">
-              <a href="https://www.tiktok.com/@yassinnabil3?_t=ZS-8uHaYiGDOwH&_r=1">
-                <img class="computer" src="/data/WhatsApp Image 2025-03-04 at 00.23.45_3951ee92.jpg" alt="">
-                <i class="fa-brands fa-tiktok"></i>
-            </a>  
-            </li>
+                <a  href="https://www.instagram.com/xyassinnabilx?igsh=MzFmM2ttOHRpN3Yy">
+                 <i class="fa-brands fa-instagram"></i>
+             </a> 
+             </li>
+             <li class="unshow facebook">
+               <a href="https://www.facebook.com/share/1PzkmA9aS4/?mibextid=qi2Omg">
+                 <i class="fa-brands fa-facebook"></i>
+             </a>  
+             </li>
+             <li class="unshow tiktok">
+               <a href="https://www.tiktok.com/@yassinnabil3?_t=ZS-8uHaYiGDOwH&_r=1">
+                 <i class="fa-brands fa-tiktok"></i>
+             </a>  
+             </li>
         </ul>
     </div>
     <footer id="more" class="unvis">
-        <img src="data/067.-Letter-G-Gaming-Concept-Logo.png.jpg computer" alt="">
         <div class="name">
             created by <span>Ahmed Abas &copy;</span>
         </div>
-        <div class="social-ahmed computer">
-            <ul>
-                <li>
-                   <a href=""><i class="fa-brands fa-instagram"></i></a> 
-                </li>
-                <li>
-                  <a class="facebook" href=""><i class="fa-brands fa-facebook"></i></a>  
-                </li>
-                <li>
-                  <a class="tiktok" href=""><i class="fa-brands fa-tiktok"></i></a>  
-                </li>
-            </ul>
-        </div>
     </footer>
     <script src="js/js.js"></script>
-</html>
+    </html>

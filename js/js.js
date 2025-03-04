@@ -1,16 +1,4 @@
 
-function checkPhone(){
-    if(window.innerWidth <= 768){
-        window.location.href = "/phone-index.html"
-    }else if(window.innerWidth > 768){
-        window.location.href = "/index.html"
-    }
-}
-
-window.addEventListener('resize',()=>{
-    checkPhone()
-})
-
 let about = document.querySelector('.about-yassin')
 window.addEventListener('scroll',()=>{
     let rect = about.getBoundingClientRect();
