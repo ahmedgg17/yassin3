@@ -1,9 +1,6 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
-.com{
-    display: none;
-}
 *{
     box-sizing: border-box;
     list-style: none;
@@ -56,6 +53,9 @@ header{
         border-radius: 50%;
         width: 100px;
     }
+    & h2{
+margin-top: 50px;
+    }
 }
 .bottom{
         display: flex;
@@ -63,7 +63,7 @@ header{
     flex-direction: column;
 }
 .main{
-    margin-top: 100px;
+    margin-top: 50px;
     /* display: none; */
     padding-bottom: 50px;
     background-color: rgba(49, 49, 49, 0.89);
@@ -82,7 +82,11 @@ header{
             color: red;
         }
     }
-    & a{
+    & .under-dis{
+        color: gray;
+    }
+.dis-fot-yassin{
+        & a{
         transition: 0.3s;
         font-size: 20px;
         font-weight: 600;
@@ -116,7 +120,7 @@ header{
         animation-name: button;
         animation-duration: 1s;
     }
-    & a:active img{
+     & a:active img{
         opacity: 1;
         transform: translateY(0);
       }
@@ -128,6 +132,8 @@ header{
           transform: scale(0.9);
       }
     
+}
+   
 }
 .record{
     display: flex;
@@ -157,9 +163,11 @@ header{
 .next-match{
     color: white;
     display: flex;
-    display: none;
+    margin-top: 100px;
+    /* display: none; */
     /* flex-direction: column; */
-    padding: 30px;
+    padding: 10px;
+    box-shadow: 0 0 10px 3px black;
     justify-content: center;
     font-size: 17px;
     border: 2px solid white;
@@ -299,7 +307,7 @@ right: 0;
     line-height: 30px;
     border: 1px solid;
     border-radius: 20px;
-    box-shadow: 0 0 10px 1px ;
+    box-shadow: 0 0 10px 1px black ;
 
  }
 }
@@ -325,45 +333,65 @@ right: 0;
           flex-direction: column;
           align-items:center ;
           color: white;
-          margin-top: 300px;
+          margin-top: 100px;
+          margin-bottom: 100px;
         & ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
             /* border: 3px solid white; */
             /* box-shadow: 0 0 10px 1px ; */
             padding: 0px;
             border-radius: 20px;
             & li a{
-                margin:50px;
+
+                /* margin:50px; */
                 font-size: 20px;
             transition: 0.3s;
             cursor: pointer;
             color: white;
             }
            & li{
-
-
-            margin:50px 0;
-            border: 3px solid white;
-            box-shadow: 0 0 10px 1px ; 
-            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            margin:0px 0;
+            /* box-shadow: 0 0 10px 1px ;  */
+            padding: 5px;
+            /* border: 1px solid; */
             border-radius: 20px;
             text-align: center;
 
             & a{
-padding: 0 50px;
-margin: 0;
-
+/* padding: 0 50px; */
+margin: 0px;
+                font-size: 30px;
 
             }
             }
 
             & li:nth-child(1){
-                transition: 1s;         
+                transition: 1s;  
+                transform: translatex(-100px);   
+ 
+                background-image: linear-gradient(to left, rgb(248, 49, 82),rgb(252, 104, 129));   
             }
             & li:nth-child(2){
                 transition: 1s;
+                background-color: white; 
+                transform: translateY(100px);   
+                & a{
+                                    color: rgb(30, 108, 252); 
+                }
+   
             }
             & li:nth-child(3){
+                transform: translatex(100px);   
+
                 transition: 1s;
+                background-color: black;
             }
             & li:active{
                 transform: scale(0.9);
@@ -409,5 +437,42 @@ footer{
     }
     to{
         transform: scale(1);
+    }
+}
+.in-show{
+    animation-name: ai;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes ai{
+    to{
+        opacity: 1; 
+        transform: translatex(0);
+    }
+}
+.fa-show{
+    animation-name: ai2;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes ai2{
+    to{
+        opacity: 1; 
+        transform: translateY(0);
+    }
+}
+.ti-show{
+    animation-name: ai3;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes ai3{
+    to{
+        opacity: 1; 
+        transform: translateX(0);
     }
 }

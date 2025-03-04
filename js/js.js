@@ -2,7 +2,7 @@
 function checkPhone(){
     if(window.innerWidth <= 768){
         window.location.href = "/phone-index.html"
-    }else{
+    }else if(window.innerWidth > 768){
         window.location.href = "/index.html"
     }
 }
@@ -55,32 +55,32 @@ close.addEventListener('click',()=>{
     cansel()
 }
 )
-let social = document.querySelector('.instagram')
+// let social = document.querySelector('.instagram')
 
-window.addEventListener('scroll',()=>{
-    let rect = social.getBoundingClientRect();
-    if(rect.top < window.innerHeight - 200){
-        social.classList.add('show')
-        social.classList.remove('unshow')
-    }
-})
-let social2 = document.querySelector('.facebook')
+// window.addEventListener('scroll',()=>{
+//     let rect = social.getBoundingClientRect();
+//     if(rect.top < window.innerHeight - 100){
+//         social.classList.add('show')
+//         social.classList.remove('unshow')
+//     }
+// })
+// let social2 = document.querySelector('.facebook')
 
-window.addEventListener('scroll',()=>{
-    let rect = social.getBoundingClientRect();
-    if(rect.top < window.innerHeight - 300){
-        social2.classList.add('show')
-        social2.classList.remove('unshow')
-    }
-})
-let social3 = document.querySelector('.tiktok')
-window.addEventListener('scroll',()=>{
-    let rect = social.getBoundingClientRect();
-    if(rect.top < window.innerHeight - 350){
-        social3.classList.add('show')
-        social3.classList.remove('unshow')
-    }
-})
+// window.addEventListener('scroll',()=>{
+//     let rect = social.getBoundingClientRect();
+//     if(rect.top < window.innerHeight - 100){
+//         social2.classList.add('show')
+//         social2.classList.remove('unshow')
+//     }
+// })
+// let social3 = document.querySelector('.tiktok')
+// window.addEventListener('scroll',()=>{
+//     let rect = social.getBoundingClientRect();
+//     if(rect.top < window.innerHeight - 100){
+//         social3.classList.add('show')
+//         social3.classList.remove('unshow')
+//     }
+// })
 let comInstagram = document.querySelector('.instagram')
 window.addEventListener('scroll',()=>{
     let rect = comInstagram.getBoundingClientRect();
