@@ -1,3 +1,4 @@
+
 let about = document.querySelector('.about-yassin')
 window.addEventListener('scroll',()=>{
     let rect = about.getBoundingClientRect();
