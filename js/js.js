@@ -1,3 +1,16 @@
+
+function checkPhone(){
+    if(window.innerWidth <= 768){
+        window.location.href = "/phone-index.html"
+    }else{
+        window.location.href = "/index.html"
+    }
+}
+
+window.addEventListener('resize',()=>{
+    checkPhone()
+})
+
 let about = document.querySelector('.about-yassin')
 window.addEventListener('scroll',()=>{
     let rect = about.getBoundingClientRect();
@@ -68,6 +81,37 @@ window.addEventListener('scroll',()=>{
         social3.classList.remove('unshow')
     }
 })
+let comInstagram = document.querySelector('.instagram')
+window.addEventListener('scroll',()=>{
+    let rect = comInstagram.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 200){
+        comInstagram.classList.add('in-show')
+        setTimeout(()=>{
+            comInstagram.classList.add('card')
+        },2500)
+    }
+})
+let comFacebook = document.querySelector('.facebook')
+window.addEventListener('scroll',()=>{
+    let rect = comFacebook.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 50){
+        comFacebook.classList.add('fa-show')
+        setTimeout(()=>{
+            comFacebook.classList.add('card')
+        },2500)
+    }
+})
+let comTiktok = document.querySelector('.tiktok')
+window.addEventListener('scroll',()=>{
+    let rect = comTiktok.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 200){
+        comTiktok.classList.add('ti-show')
+        setTimeout(()=>{
+            comTiktok.classList.add('card')
+        },2500)
+    }
+})
+
 
 let canselTeleport = document.querySelectorAll('.cansel')
 

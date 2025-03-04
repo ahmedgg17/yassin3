@@ -72,7 +72,8 @@ header{
     & .main{
         display: flex;
         box-shadow: 1px 0px 20px 10px black;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 0 90px;
         background-color:black;
         color: white;
         /* padding-bottom: 20px; */
@@ -111,7 +112,7 @@ header{
                 overflow: hidden;
                     & img{
                         width: 70px;
-                        left: 43%;
+                        left: 48%;
                         transform: translateY(200px);
                         background-color: red;
                        position: absolute;
