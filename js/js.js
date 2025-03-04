@@ -118,9 +118,9 @@ let aboutYassin =`Yassin Nabil is an 18-year-old amateur MMA fighter, standing a
 let month =`3`;
 let day =`1`;
 let year =`2025`;
-let wins = `2 <span>-</span>`
-let loss = `1 <span>-</span>`
-let draw = `0`
+let wins = `00 <span>-</span>`
+let loss = `00 <span>-</span>`
+let draw = `0000`
 
 let nextMatchTime = `${day}/${month}/${year}`
 
