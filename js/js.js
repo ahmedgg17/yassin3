@@ -1,4 +1,3 @@
-
 let about = document.querySelector('.about-yassin')
 window.addEventListener('scroll',()=>{
     let rect = about.getBoundingClientRect();
@@ -28,8 +27,7 @@ sider.classList.remove('sider-close')
 let body = document.body 
 body.classList.add("overflow")
 document.querySelector(".overlay").classList.remove("display")
-}
-)    
+})    
 function cansel(){
         let sider = document.getElementById('sider')
 sider.classList.remove('sider-show')
@@ -41,34 +39,33 @@ document.querySelector(".overlay").classList.add("display")
 let close = document.getElementById('close')
 close.addEventListener('click',()=>{
     cansel()
-}
-)
-// let social = document.querySelector('.instagram')
+})
+let social = document.querySelector('.instagram')
 
-// window.addEventListener('scroll',()=>{
-//     let rect = social.getBoundingClientRect();
-//     if(rect.top < window.innerHeight - 100){
-//         social.classList.add('show')
-//         social.classList.remove('unshow')
-//     }
-// })
-// let social2 = document.querySelector('.facebook')
+window.addEventListener('scroll',()=>{
+    let rect = social.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 100){
+        social.classList.add('show')
+        social.classList.remove('unshow')
+    }
+})
+let social2 = document.querySelector('.facebook')
 
-// window.addEventListener('scroll',()=>{
-//     let rect = social.getBoundingClientRect();
-//     if(rect.top < window.innerHeight - 100){
-//         social2.classList.add('show')
-//         social2.classList.remove('unshow')
-//     }
-// })
-// let social3 = document.querySelector('.tiktok')
-// window.addEventListener('scroll',()=>{
-//     let rect = social.getBoundingClientRect();
-//     if(rect.top < window.innerHeight - 100){
-//         social3.classList.add('show')
-//         social3.classList.remove('unshow')
-//     }
-// })
+window.addEventListener('scroll',()=>{
+    let rect = social.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 100){
+        social2.classList.add('show')
+        social2.classList.remove('unshow')
+    }
+})
+let social3 = document.querySelector('.tiktok')
+window.addEventListener('scroll',()=>{
+    let rect = social.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 100){
+        social3.classList.add('show')
+        social3.classList.remove('unshow')
+    }
+})
 let comInstagram = document.querySelector('.instagram')
 window.addEventListener('scroll',()=>{
     let rect = comInstagram.getBoundingClientRect();
