@@ -70,7 +70,7 @@ window.addEventListener('scroll',()=>{
 let comInstagram = document.querySelector('.instagram')
 window.addEventListener('scroll',()=>{
     let rect = comInstagram.getBoundingClientRect();
-    if(rect.top < window.innerHeight - 200){
+    if(rect.top < window.innerHeight - 150){
         comInstagram.classList.add('in-show')
         setTimeout(()=>{
             comInstagram.classList.add('card')
@@ -80,7 +80,7 @@ window.addEventListener('scroll',()=>{
 let comFacebook = document.querySelector('.facebook')
 window.addEventListener('scroll',()=>{
     let rect = comFacebook.getBoundingClientRect();
-    if(rect.top < window.innerHeight - 50){
+    if(rect.top < window.innerHeight - 10){
         comFacebook.classList.add('fa-show')
         setTimeout(()=>{
             comFacebook.classList.add('card')
@@ -90,7 +90,7 @@ window.addEventListener('scroll',()=>{
 let comTiktok = document.querySelector('.tiktok')
 window.addEventListener('scroll',()=>{
     let rect = comTiktok.getBoundingClientRect();
-    if(rect.top < window.innerHeight - 200){
+    if(rect.top < window.innerHeight - 150){
         comTiktok.classList.add('ti-show')
         setTimeout(()=>{
             comTiktok.classList.add('card')
@@ -110,44 +110,15 @@ function videoShow(vid){
     let videoPlase = document.querySelector(".video video")
     videoPlase.setAttribute("src",vid)
 }
-
-let leftArrow = document.querySelector(".left")
-let rightArrow = document.querySelector(".right")
-let videos= ["data/Minecraft_ 1.21.4 - Multiplayer (3rd-party Server) 2025-02-21 02-53-09.mp4"
-    ,"data/Minecraft_ 1.21.4 - Multiplayer (3rd-party Server) 2025-02-21 02-56-55.mp4"]
-    let num = 0
-leftArrow.addEventListener("click",()=>{
-    num --
-    if(num < 0){
-        num ++
-    }else{
-        let video = videos[num]
-        videoShow(video) 
-    }
-
-})
-rightArrow.addEventListener("click",()=>{
-    let numOfVideos = videos.length
-    num ++
-    if(num == numOfVideos){
-        num --
-    }else{
-        let video = videos[num]
-        videoShow(video)
-    }
-    
-})
-
-
 let headerDis = `<span class="frist-h2">WELCOME TO</span> ,Yassin nabil webside`;
 let matchDis=` Yassin Nabil is an amateur MMA fighter with a great passion for the sport. He has played three matches so far, winning two, losing one. Despite the challenges he's faced, Yassin continues to train hard and improve his skills, aiming for greater success in the future. He has a growing fanbase who supports him in every step, and he remains determined to achieve his goals in the world of MMA.`;
 let aboutYassin =`Yassin Nabil is an 18-year-old amateur MMA fighter, standing at 160 cm tall and competing in the weight range of 50 to 55 kg. He has been training in MMA for a year, gaining valuable experience in the sport. Yassin trains under the guidance of his coach, Omar El-Fayoumi, who has been instrumental in shaping his skills. With a strong dedication to improving his technique and expanding his knowledge of MMA`;
-let month =`3`;
-let day =`1`;
-let year =`2025`;
-let wins = `00 <span>-</span>`
-let loss = `00 <span>-</span>`
-let draw = `0000`
+let month =`0`;
+let day =`0`;
+let year =`0000`;
+let wins = `2 <span>-</span>`
+let loss = `0 <span>-</span>`
+let draw = `0`
 
 let nextMatchTime = `${day}/${month}/${year}`
 

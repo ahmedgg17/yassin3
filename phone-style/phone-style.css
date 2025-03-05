@@ -223,7 +223,7 @@ right: 0;
  height: 100vh;
  & li{
     /* margin:0  0 0; */
-    margin-bottom: 70px;
+    margin: 30px 0;
     padding: 5px 5px 5px 5px;
     border-radius:40px ;
     background-color: rgba(128, 128, 128, 0.178);
@@ -233,24 +233,27 @@ right: 0;
            font-size: 23px; 
     }
  }
- & .main,.about1,.more,.social{
+ & .main1,.about1,.more,.social2{
     padding: 0 20px;
-
+    font-size: 15px;
 
  }
  & .li-main,.li-about1,.li-social,.last{
     margin:0 50px 0 50px;
-    margin-bottom: 70px;
-    padding:20px 40px;
+    /* margin-bottom: 70px; */
+    padding:20px 35px;
+    margin: 30px;
     border: none;
-    background-color: rgba(128, 128, 128, 0.034);
+    font-size: 15px;
+    background-color: rgba(128, 128, 128, 0.24);
  }
 }
 .sider-social{
     display: flex;
     justify-content: space-around;
     position: relative;
-    bottom: -100px;
+    /* padding:50px 0 0 0; */
+    align-items: center;
     & li a{
         padding: 10px;
     }
@@ -277,7 +280,8 @@ right: 0;
     backdrop-filter: blur(5px);
     color:white;
     margin: 0;
-    padding: 10px 15px;
+    padding: 10px 15px 10px 15px;
+    top: 0px;
     right: 0;
     z-index: 100;
     background-color: rgba(0, 0, 0, 0.562);
@@ -401,7 +405,6 @@ margin: 0px;
                 & a{
                                     color: rgb(30, 108, 252); 
                 }
-   
             }
             & li:nth-child(3){
                 transform: translatex(35px);
