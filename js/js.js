@@ -106,11 +106,37 @@ canselTeleport.forEach((a)=>{
         cansel()
     })
 })
+function videoShow(vid){
+    let videoPlase = document.querySelector(".video video")
+    videoPlase.setAttribute("src",vid)
+}
 
+let leftArrow = document.querySelector(".left")
+let rightArrow = document.querySelector(".right")
+let videos= ["data/Minecraft_ 1.21.4 - Multiplayer (3rd-party Server) 2025-02-21 02-53-09.mp4"
+    ,"data/Minecraft_ 1.21.4 - Multiplayer (3rd-party Server) 2025-02-21 02-56-55.mp4"]
+    let num = 0
+leftArrow.addEventListener("click",()=>{
+    num --
+    if(num < 0){
+        num ++
+    }else{
+        let video = videos[num]
+        videoShow(video) 
+    }
 
-
-
-
+})
+rightArrow.addEventListener("click",()=>{
+    let numOfVideos = videos.length
+    num ++
+    if(num == numOfVideos){
+        num --
+    }else{
+        let video = videos[num]
+        videoShow(video)
+    }
+    
+})
 
 
 let headerDis = `<span class="frist-h2">WELCOME TO</span> ,Yassin nabil webside`;
